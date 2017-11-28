@@ -1,9 +1,11 @@
 package Fenetre;
 
+import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GraphicsEnvironment;
 import java.awt.Rectangle;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -35,8 +37,11 @@ public class Fenetre1 {
 		JPanel panel = new JPanel();
 		panel.setLayout(new FlowLayout());
 		JLabel label = new JLabel("Ma première fenêtre");
+		JButton bouton= new JButton("Test");
 		panel.add(label);
+		panel.add(bouton,BorderLayout.CENTER);
 		maFenetre.add(panel);
+		
 
 	}
 
