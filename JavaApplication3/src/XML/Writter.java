@@ -21,7 +21,8 @@ public class Writter extends JDom1
 		static org.jdom2.Document document = new Document(racine);
 		
 		 static String events[][] = {   { "01/01/2018", "08h00", "04h00", "Reunion"},
-						{ "01/01/2018", "12h00", "02h00", "Repas"} 	
+						{ "01/01/2018", "12h00", "02h00", "Repas"},
+                                                { "01/01/2018", "14h00", "04h00", "Reunion2"}
                                             };
 		
 

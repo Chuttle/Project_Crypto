@@ -8,5 +8,8 @@
     <event duree="02h00" heure="12h00" date="01/01/2018">
       <details>Repas</details>
     </event>
+    <event duree="04h00" heure="14h00" date="01/01/2018">
+      <details>Reunion2</details>
+    </event>
   </Entrees>
 </data>
