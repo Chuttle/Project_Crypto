@@ -18,7 +18,7 @@ public class JavaApplication3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        JFrame J=new NewJFrame();
+        JFrame J=new AccueilFrame();
         J.setVisible(true);
     }
     
