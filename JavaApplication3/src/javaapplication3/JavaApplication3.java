@@ -17,7 +17,7 @@ public class JavaApplication3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Lance la page d'accueil
         JFrame J=new AccueilFrame();
         J.setVisible(true);
     }

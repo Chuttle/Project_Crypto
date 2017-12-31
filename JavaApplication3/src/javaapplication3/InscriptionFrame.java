@@ -131,8 +131,9 @@ public class InscriptionFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
         if(jPasswordField1.getPassword()==jPasswordField2.getPassword()){
+            // Vérifies la correspondance des mots de passe
+            // Si la correspondance est juste, on envoit sur la page principale de l'application
             jProgressBar1.setString("100%");
             jProgressBar1.setValue(100);
             jProgressBar1.setForeground(Color.green);
@@ -142,6 +143,7 @@ public class InscriptionFrame extends javax.swing.JFrame {
             // TO DO envoyer le mot de passe et l'identifiant pour les stocker
         }
         else{
+            // Indique une erreur de mot de passe
             jProgressBar1.setString("100%");
             jProgressBar1.setValue(100);
             jProgressBar1.setForeground(Color.red);
@@ -155,11 +157,10 @@ public class InscriptionFrame extends javax.swing.JFrame {
 
     private void jPasswordField2PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jPasswordField2PropertyChange
         // TODO add your handling code here:
-        
     }//GEN-LAST:event_jPasswordField2PropertyChange
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+        // Ferme l'application
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 

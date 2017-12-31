@@ -94,7 +94,7 @@ public class ConnexionFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // Vérifie l'id et le mdp pour la connexion
         // TODO vérifier l'identifiant et le mdp
         this.dispose();
         JFrame JLogs=new AccueilFrame();
@@ -102,7 +102,7 @@ public class ConnexionFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
+        // Ferme l'application
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
