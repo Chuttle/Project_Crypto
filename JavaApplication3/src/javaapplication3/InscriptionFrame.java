@@ -131,7 +131,7 @@ public class InscriptionFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if(jPasswordField1.getPassword()==jPasswordField2.getPassword()){
+        if(jPasswordField1.getPassword().equals(jPasswordField2.getPassword())){
             // Vérifies la correspondance des mots de passe
             // Si la correspondance est juste, on envoit sur la page principale de l'application
             jProgressBar1.setString("100%");
