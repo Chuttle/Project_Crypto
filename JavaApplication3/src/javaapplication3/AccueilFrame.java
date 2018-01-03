@@ -12,12 +12,18 @@ import javax.swing.JFrame;
  * @author Thomas
  */
 public class AccueilFrame extends javax.swing.JFrame {
-
+    private DataBase db=new DataBase();
+    
     /**
-     * Creates new form NewJFrame
+     * Creates new form AccueilFrame
      */
     public AccueilFrame() {
         initComponents();
+    }
+    
+    public AccueilFrame(DataBase db){
+        initComponents();
+        this.db=db;
     }
 
     /**
@@ -116,14 +122,14 @@ public class AccueilFrame extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // Ferme la fenetre actuelle et ouvre une fenetre connexion
         this.dispose();
-        JFrame J1= new ConnexionFrame();
+        JFrame J1= new ConnexionFrame(this.db);
         J1.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // Ferme la fenetre actuelle et ouvre une fenetre inscrition
         this.dispose();
-        JFrame J2= new InscriptionFrame();
+        JFrame J2= new InscriptionFrame(this.db);
         J2.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -135,14 +141,14 @@ public class AccueilFrame extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // Ferme la fenetre actuelle et ouvre une fenetre connexion
         this.dispose();
-        JFrame J1= new ConnexionFrame();
+        JFrame J1= new ConnexionFrame(this.db);
         J1.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // Ferme la fenetre actuelle et ouvre une fenetre inscrition
         this.dispose();
-        JFrame J2= new InscriptionFrame();
+        JFrame J2= new InscriptionFrame(this.db);
         J2.setVisible(true);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
@@ -176,6 +182,7 @@ public class AccueilFrame extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new AccueilFrame().setVisible(true);
             }

@@ -12,7 +12,7 @@ import javax.swing.JFrame;
  * @author Thomas
  */
 public class JavaApplication3 {
-
+    
     /**
      * @param args the command line arguments
      */
